@@ -126,7 +126,7 @@ span.icon {
 }
 
 @media (min-width: 851px) and (max-width: 1000px) {
-    .container {
-      width: 80%;
-    }
+  .container {
+    width: 80%;
+  }
 }
