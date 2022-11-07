@@ -27,12 +27,12 @@ main {
   background-color: hsl(0, 0%, 100%);
 }
 
-.container img, .container picture {
+img {
   width: 100%;
-  height: auto;
-  border-radius: inherit;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
 }
-
 .container-info {
   padding: 20px;
   display: flex;
@@ -50,52 +50,52 @@ main {
 }
 
 .title {
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    font-size: 30px;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 .text {
-    font-family: 'Montserrat', sans-serif;
-    color: hsl(228, 12%, 48%);
-    font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 15px;
 }
 
 .prices {
-    display: block;
-    margin-top: 20px;
+  display: block;
+  margin-top: 20px;
 }
 
 .price {
-    font-family: 'Fraunces', serif;
-    color: hsl(158, 36%, 37%);
-    font-weight: 700;
-    font-size: 30px;
-    margin-right: 20px;
+  font-family: 'Fraunces', serif;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: 30px;
+  margin-right: 20px;
 }
 
 button {
-    color: hsl(0, 0%, 100%);
-    padding: 10px;
-    background-color: hsl(158, 36%, 37%);
-    display: flex;
-    justify-content: center;
-    border: none;
-    margin-top: 20px;
-    border-radius: 10px;
-    align-items: center;
-    font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  padding: 10px;
+  background-color: hsl(158, 36%, 37%);
+  display: flex;
+  justify-content: center;
+  border: none;
+  margin-top: 20px;
+  border-radius: 10px;
+  align-items: center;
+  font-weight: 700;
 }
 
 span.icon {
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    background: url(../images/icon-cart.svg) no-repeat;
-    margin-right: 10px;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: url(../images/icon-cart.svg) no-repeat;
+  margin-right: 10px;
 }
 .discount {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .attribution {
@@ -115,15 +115,18 @@ span.icon {
     width: 90%;
   }
   .container img {
-    border-bottom-left-radius: initial;
-    border-bottom-right-radius: initial;
+    border-radius: 10px;
   }
 }
 
 @media (min-width: 601px) and (max-width: 850px) {
   .container {
-    width: 85%;
+    width: 90%;
   }
 }
 
-  
+@media (min-width: 851px) and (max-width: 1000px) {
+    .container {
+      width: 80%;
+    }
+}
