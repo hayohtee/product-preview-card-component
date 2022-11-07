@@ -24,15 +24,15 @@
   <body>
     <main>
       <div class="container">
-        <img
-          srcset="
-            ./images/image-product-mobile.jpg  480w,
-            ./images/image-product-desktop.jpg 800w
-          "
-          sizes="(max-width: 600px) 480px, 800px"
-          src="./images/image-product-desktop.jpg"
-          alt="Gabrielle CHANEL PARIS perfume"
-        />
+        <picture>
+          <source 
+            srcset="./images/image-product-desktop.jpg"
+            media="(min-width: 601px)">
+            <source 
+              srcset="./images/image-product-mobile.jpg"
+              media="(max-width: 600px)">
+            <img src="./images/image-product-desktop.jpg" alt="Gabrielle CHANEL Perfume">
+        </picture>
         <div class="container-info">
           <h1 class="heading">Perfume</h1>
           <h2 class="title">Gabrielle Essence Eau De Parfum</h2>

@@ -27,7 +27,7 @@ main {
   background-color: hsl(0, 0%, 100%);
 }
 
-.container img {
+.container img, .container picture {
   width: 100%;
   height: auto;
   border-radius: inherit;
