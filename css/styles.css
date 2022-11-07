@@ -1,13 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(30, 38%, 92%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  width: 40%;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+.container-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.heading {
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+}
+
+.prices {
+    display: block;
+    margin-top: 20px;
+}
+
+.price {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+button {
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    justify-content: center;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    align-items: center;
+    font-weight: 700;
+}
+
+span.icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url(../images/icon-cart.svg) no-repeat;
+    margin-right: 10px;
+}
+.discount {
+    text-decoration: line-through;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 10px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .container img {
+    border-bottom-left-radius: initial;
+    border-bottom-right-radius: initial;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 850px) {
+  .container {
+    width: 85%;
+  }
+}
+
+  
